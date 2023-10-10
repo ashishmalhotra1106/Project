@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subject-Wise Student Feedback</title>
+    <link rel="stylesheet" href="FeedbackPagesubject.css">
+</head>
+<body>
+    <header>
+        <h1>Subject-Wise Student Feedback</h1>
+        <h5>Feedback shall be visible to faculty as anonymous</h5>
+    </header>
+
+    <div class="container">
+        <form action="TyFeedbackpage.html" method="post">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="ADBMS">ADBMS</option>
+                <option value="CPI">CPI</option>
+                <option value="IWT">IWT</option>
+                <option value="Wireless">Wireless</option>
+                <option value="Java">Java</option>
+                </select>
+                <label for="rating">Rating (0-5):</label>
+                <input type="number" id="rating" name="rating" min="0" max="5" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <input class="submit-button" type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</body>
+</html>
